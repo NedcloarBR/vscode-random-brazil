@@ -41,14 +41,14 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checknup17", checkNUP17));
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomjudicialprocess", insertRandomJudicialProcess));
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkjudicialprocess", checkJudicialProcess));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomrandompispasep", insertRandomPISPasep));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkrandompispasep", checkPISPasep));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomrandomeleitoraltitle", insertRandomEleitoralTitle));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkrandomeleitoraltitle", checkEleitoralTitle));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomrandomcep", insertRandomCEP));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkrandomcep", checkCEP));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomrandomrenavam", insertRandomRENAVAM));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkrandomrenavam", checkRENAVAM));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randompispasep", insertRandomPISPasep));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkpispasep", checkPISPasep));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomeleitoraltitle", insertRandomEleitoralTitle));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkeleitoraltitle", checkEleitoralTitle));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomcep", insertRandomCEP));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkcep", checkCEP));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomrenavam", insertRandomRENAVAM));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkrenavam", checkRENAVAM));
 }
 
 export function deactivate() { }
