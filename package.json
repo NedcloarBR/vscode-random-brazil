@@ -84,6 +84,14 @@
 			{
 				"command": "random-brazil.checkeleitoraltitle",
 				"title": "Random Brazil: Check Eleitoral Title"
+			},
+      {
+				"command": "random-brazil.randomcep",
+				"title": "Random Brazil: Random CEP"
+			},
+			{
+				"command": "random-brazil.checkcep",
+				"title": "Random Brazil: Check CEP"
 			}
 		]
 	},
