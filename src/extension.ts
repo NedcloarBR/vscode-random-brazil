@@ -1,26 +1,19 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
+import { Settings } from './settings';
+import { checkCPF, insertRandomCPF } from './functions';
 
-// This method is called when your extension is activated
-// Your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+  const settings = new Settings();
 
-	// Use the console to output diagnostic information (console.log) and errors (console.error)
-	// This line of code will only be executed once when your extension is activated
-	console.log('Congratulations, your extension "random-brazil" is now active!');
+  if(!settings.enabled) {
+    console.log("The extension \"random-brazil\" is disabled");
+    return;
+  }
 
-	// The command has been defined in the package.json file
-	// Now provide the implementation of the command with registerCommand
-	// The commandId parameter must match the command field in package.json
-	const disposable = vscode.commands.registerCommand('random-brazil.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		vscode.window.showInformationMessage('Hello World from random-brazil!');
-	});
+	console.log('The extension \"random-brazil\" is enabled');
 
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomcpf", insertRandomCPF));
+	context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkcpf", checkCPF));
 }
 
-// This method is called when your extension is deactivated
 export function deactivate() {}

@@ -16,13 +16,38 @@
 	],
 	"activationEvents": [],
 	"main": "./out/extension.js",
-	
+	"contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Random Brazil Configuration",
+      "properties": {
+        "random-brazil.enable": {
+          "type": "boolean",
+          "default": "true",
+          "description": "Enable/disable this extension."
+        }
+      }
+    },
+		"commands": [
+			{
+				"command": "random-brazil.randomcpf",
+				"title": "Random Brazil: Random CPF"
+			},
+			{
+				"command": "random-brazil.checkcpf",
+				"title": "Random Brazil: Check CPF"
+			}
+		]
+	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
 		"lint": "eslint src --ext ts",
 		"test": "vscode-test"
+	},
+	"dependencies": {
+		"validation-br": "^1.4.5"
 	},
 	"devDependencies": {
 		"@types/eslint": "^9",
