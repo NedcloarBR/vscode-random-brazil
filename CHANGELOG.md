@@ -4,6 +4,11 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [v1.4.0] - PIS Pasep Update
+
+Add PIS Pasep commands
+- Gerenate
+- Check
 
 ## [v1.4.0] - Judicial Process Update
 
