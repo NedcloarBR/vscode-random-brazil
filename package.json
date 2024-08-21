@@ -60,8 +60,7 @@
 			{
 				"command": "random-brazil.checknup17",
 				"title": "Random Brazil: Check NUP17"
-			}
-      ,
+			},
       {
 				"command": "random-brazil.randomjudicialprocess",
 				"title": "Random Brazil: Random Judicial Process"
@@ -69,6 +68,14 @@
 			{
 				"command": "random-brazil.checkjudicialprocess",
 				"title": "Random Brazil: Check Judicial Process"
+			},
+      {
+				"command": "random-brazil.randompispasep",
+				"title": "Random Brazil: Random PIS Pasep"
+			},
+			{
+				"command": "random-brazil.checkpispasep",
+				"title": "Random Brazil: Check PIS Pasep"
 			}
 		]
 	},
