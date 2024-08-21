@@ -3,7 +3,7 @@
 	"displayName": "Random Brazil",
 	"description": "Create Brazilizan random data",
 	"version": "1.0.0",
-	"publisher": "NedcloarBR",
+	"publisher": "nedcloarbr",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/NedcloarBR/vscode-random-brazil.git"
