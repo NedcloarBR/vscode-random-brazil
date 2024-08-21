@@ -2,7 +2,7 @@
 	"name": "random-brazil",
 	"displayName": "Random Brazil",
 	"description": "Generate or Validate Brazilian documents",
-	"version": "1.8.1",
+	"version": "1.8.2",
 	"publisher": "nedcloarbr",
 	"repository": {
 		"type": "git",

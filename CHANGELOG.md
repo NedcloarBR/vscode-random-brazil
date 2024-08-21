@@ -4,6 +4,18 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [v1.8.2] - Fix Commands names Update
+
+Remove aditional "random" in commands names
+- randompispasep
+- checkpispasep
+- randomeleitoraltitle
+- checkeleitoraltitle
+- randomcep
+- checkcep
+- randomrenavam
+- checkrenavam
+
 ## [v1.8.1] - Fix Judicial Process Update
 
 Fix Judicial Process `isValid` message
