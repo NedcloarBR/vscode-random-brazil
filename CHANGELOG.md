@@ -6,18 +6,18 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 ## [v1.2.0] - CNH Update
 
-Add CNH functions
+Add CNH commands
 - Gerenate
 - Check
 
 ## [v1.1.0] - CNPJ Update
 
-Add CNPJ functions
+Add CNPJ commands
 - Gerenate
 - Check
 
 ## [v1.0.0] - CPF Update
 
-Add CPF functions
+Add CPF commands
 - Gerenate
 - Check
