@@ -4,6 +4,12 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [v1.7.0] - CEP Update
+
+Add CEP commands
+- Gerenate
+- Check
+
 ## [v1.6.0] - Eleitoral Title Update
 
 Add Eleitoral Title commands
