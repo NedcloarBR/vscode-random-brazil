@@ -4,6 +4,12 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [v1.8.0] - RENAVAM Update
+
+Add RENAVAM commands
+- Gerenate
+- Check
+
 ## [v1.7.0] - CEP Update
 
 Add CEP commands
