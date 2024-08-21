@@ -2,7 +2,7 @@
 
 ## Descrição
 
-**Random Brazil** é uma extensão do Visual Studio Code que permite gerar e validar dados brasileiros, como CPF, CNPJ, CNH, entre outros. É uma ferramenta útil para desenvolvedores que precisam de dados fictícios para testes ou validação de dados em suas aplicações.
+**Random Brazil** é uma extensão do Visual Studio Code que permite gerar e validar dados de documentos brasileiros, como CPF, CNPJ, CNH, entre outros. É uma ferramenta útil para desenvolvedores que precisam de dados fictícios para testes ou validação de dados em suas aplicações.
 
 ## Funcionalidades
 
