@@ -1,71 +1,49 @@
-# random-brazil README
+# Random Brazil
 
-This is the README for your extension "random-brazil". After writing up a brief description, we recommend including the following sections.
+## Descrição
 
-## Features
+**Random Brazil** é uma extensão do Visual Studio Code que permite gerar e validar dados brasileiros, como CPF, CNPJ, CNH, entre outros. É uma ferramenta útil para desenvolvedores que precisam de dados fictícios para testes ou validação de dados em suas aplicações.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Funcionalidades
 
-For example if there is an image subfolder under your extension project workspace:
+- **Geração de Dados**: Gere dados brasileiros como CPF, CNPJ, CNH, entre outros, com apenas alguns cliques.
+- **Validação de Dados**: Valide a autenticidade de CPFs, CNPJs e outros documentos brasileiros diretamente no editor.
+- **Interface Intuitiva**: A extensão oferece uma interface amigável integrada ao VSCode, facilitando o uso e a integração no fluxo de trabalho.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Instalação
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+1. **Instalar via VSCode**:
+   - Abra o Visual Studio Code.
+   - Vá para a aba de extensões (Ctrl+Shift+X).
+   - Procure por `"Random Brazil"`.
+   - Clique em "Instalar".
 
-## Requirements
+2. **Instalar via linha de comando**:
+   - Execute o comando: `code --install-extension nedcloarbr.random-brazil`.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Uso
 
-## Extension Settings
+Após a instalação, acesse a extensão através da barra lateral ou use os comandos disponíveis na paleta de comandos (`Ctrl+Shift+P`).
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### Exemplos de Uso
 
-For example:
+- **Gerar um CPF válido**: Execute o comando `Random Brasil: Random CPF` e copie o resultado diretamente para o seu código.
+- **Validar um cpf**: Selecione o CNPJ no seu código, execute o comando `Random Brasil: Check CPF` e verifique se o valor é válido.
 
-This extension contributes the following settings:
+## Contribuição
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades. Para começar:
 
-## Known Issues
+1. Faça um fork do repositório.
+2. Crie um branch para sua feature ou correção (`git checkout -b feat/nova-feature`).
+3. Faça commit das suas mudanças (`git commit -am 'Adicionei minha feature'`).
+4. Envie para o branch (`git push origin feat/nova-feature`).
+5. Abra um Pull Request.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## Créditos
 
-## Release Notes
+Esta extensão foi inspirada na extensão [Random Everything](https://marketplace.visualstudio.com/items?itemName=helixquar.randomeverything) e utiliza o pacote [validation-br](https://www.npmjs.com/package/validation-br) para realizar as validações de dados brasileiros.
 
-Users appreciate release notes as you update your extension.
+## Licença
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
