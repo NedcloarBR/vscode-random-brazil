@@ -1,48 +1,41 @@
 {
-  "name": "random-brazil",
-  "displayName": "random-brazil",
-  "description": "Create Brazilizan random data",
-  "version": "0.0.1",
-  "publisher": "NedcloarBR",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NedcloarBR/vscode-random-brazil.git"
-  },
-  "engines": {
-    "vscode": "^1.92.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "activationEvents": [],
-  "main": "./out/extension.js",
-  "contributes": {
-    "commands": [
-      {
-        "command": "random-brazil.helloWorld",
-        "title": "Hello World"
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "yarn run compile",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "yarn run compile && yarn run lint",
-    "lint": "eslint src --ext ts",
-    "test": "vscode-test"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.8.3",
-    "@nedcloarbr/biome-config": "^1.4.0",
-    "@types/mocha": "^10.0.7",
-    "@types/node": "20.x",
-    "@types/vscode": "^1.92.0",
-    "@typescript-eslint/eslint-plugin": "^7.14.1",
-    "@typescript-eslint/parser": "^7.11.0",
-    "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0",
-    "typescript": "^5.4.5"
-  },
-  "packageManager": "yarn@4.4.0"
+	"name": "random-brazil",
+	"displayName": "Random Brazil",
+	"description": "Create Brazilizan random data",
+	"version": "1.0.0",
+	"publisher": "NedcloarBR",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NedcloarBR/vscode-random-brazil.git"
+	},
+	"engines": {
+		"vscode": "^1.92.0"
+	},
+	"packageManager": "yarn@4.4.0",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	
+	"scripts": {
+		"vscode:prepublish": "yarn run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "yarn run compile && yarn run lint",
+		"lint": "eslint src --ext ts",
+		"test": "vscode-test"
+	},
+	"devDependencies": {
+		"@types/eslint": "^9",
+		"@types/mocha": "^10.0.7",
+		"@types/node": "20.x",
+		"@types/vscode": "^1.92.0",
+		"@typescript-eslint/eslint-plugin": "^7.14.1",
+		"@typescript-eslint/parser": "^7.11.0",
+		"@vscode/test-cli": "^0.0.9",
+		"@vscode/test-electron": "^2.4.0",
+		"eslint": "8.26.0",
+		"typescript": "^5.4.5"
+	}
 }
