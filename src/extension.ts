@@ -1,6 +1,6 @@
 import * as vscode from 'vscode';
 import { Settings } from './settings';
-import { checkCNH, checkCNPJ, checkCPF, checkNUP17, insertRandomCNH, insertRandomCNPJ, insertRandomCPF, insertRandomNUP17 } from './functions';
+import { checkCNH, checkCNPJ, checkCPF, checkNUP17, insertRandomCNH, insertRandomCNPJ, insertRandomCPF, insertRandomNUP17, checkJudicialProcess, insertRandomJudicialProcess } from './functions';
 
 export function activate(context: vscode.ExtensionContext) {
   const settings = new Settings();
@@ -20,6 +20,8 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkcnh", checkCNH));
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomnup17", insertRandomNUP17));
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checknup17", checkNUP17));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomjudicialprocess", insertRandomJudicialProcess));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkjudicialprocess", checkJudicialProcess));
 }
 
 export function deactivate() { }
