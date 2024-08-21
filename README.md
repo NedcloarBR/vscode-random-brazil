@@ -47,3 +47,7 @@ Esta extensão foi inspirada na extensão [Random Everything](https://marketplac
 ## Licença
 
 Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Links
+[VSCode Marketplace](https://marketplace.visualstudio.com/items?itemName=nedcloarbr.random-brazil)
+[Open-VSX](https://open-vsx.org/extension/nedcloarbr/random-brazil)
