@@ -27,8 +27,8 @@ Após a instalação, acesse a extensão através da barra lateral ou use os com
 
 ### Exemplos de Uso
 
-- **Gerar um CPF válido**: Execute o comando `Random Brasil: Random CPF` e copie o resultado diretamente para o seu código.
-- **Validar um CPF**: Selecione o CNPJ no seu código, execute o comando `Random Brasil: Check CPF` e verifique se o valor é válido.
+- **Gerar um CPF válido**: Execute o comando `Random Brasil: Random CPF` o CPF será posicionado onde seu ponteiro está no código (suporte para multiplos locais incluido).
+- **Validar um CPF**: Execute o comando `Random Brasil: Check CPF` digite o CPF uma notificação ira surgir na tela informando se o mesmo é ou não válido.
 
 ## Contribuição
 
