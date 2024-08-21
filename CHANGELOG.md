@@ -4,6 +4,10 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [v1.8.1] - Fix Judicial Process Update
+
+Fix Judicial Process `isValid` message
+
 ## [v1.8.0] - RENAVAM Update
 
 Add RENAVAM commands
