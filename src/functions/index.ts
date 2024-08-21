@@ -7,3 +7,4 @@ export * from "./JudicialProcess";
 export * from "./PISPasep";
 export * from "./EleitoralTitle";
 export * from "./CEP";
+export * from "./RENAVAM";

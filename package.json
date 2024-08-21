@@ -92,6 +92,14 @@
 			{
 				"command": "random-brazil.checkcep",
 				"title": "Random Brazil: Check CEP"
+			},
+      {
+				"command": "random-brazil.randomrenavam",
+				"title": "Random Brazil: Random RENAVAM"
+			},
+			{
+				"command": "random-brazil.checkrenavam",
+				"title": "Random Brazil: Check RENAVAM"
 			}
 		]
 	},
