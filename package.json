@@ -52,6 +52,14 @@
 			{
 				"command": "random-brazil.checkcnh",
 				"title": "Random Brazil: Check CNH"
+			},
+      {
+				"command": "random-brazil.randomnup17",
+				"title": "Random Brazil: Random NUP17"
+			},
+			{
+				"command": "random-brazil.checknup17",
+				"title": "Random Brazil: Check NUP17"
 			}
 		]
 	},
