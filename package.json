@@ -76,6 +76,14 @@
 			{
 				"command": "random-brazil.checkpispasep",
 				"title": "Random Brazil: Check PIS Pasep"
+			},
+      {
+				"command": "random-brazil.randomeleitoraltitle",
+				"title": "Random Brazil: Random Eleitoral Title"
+			},
+			{
+				"command": "random-brazil.checkeleitoraltitle",
+				"title": "Random Brazil: Check Eleitoral Title"
 			}
 		]
 	},
