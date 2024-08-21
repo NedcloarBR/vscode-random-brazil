@@ -4,7 +4,7 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
-## [v1.8.3] - Cleanup Project Update
+## [v1.8.4] - Cleanup Project Update
 
 Remove unnecessary files
 Configure settings(IDE/git)
