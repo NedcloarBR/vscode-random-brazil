@@ -4,6 +4,10 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [v1.8.3] - Rename CEP to PostalCode
+
+Now it's the right name...
+
 ## [v1.8.2] - Fix Commands names Update
 
 Remove aditional "random" in commands names
