@@ -44,6 +44,14 @@
 			{
 				"command": "random-brazil.checkcnpj",
 				"title": "Random Brazil: Check CNPJ"
+			},
+      {
+				"command": "random-brazil.randomcnh",
+				"title": "Random Brazil: Random CNH"
+			},
+			{
+				"command": "random-brazil.checkcnh",
+				"title": "Random Brazil: Check CNH"
 			}
 		]
 	},
