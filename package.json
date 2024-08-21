@@ -2,7 +2,7 @@
 	"name": "random-brazil",
 	"displayName": "Random Brazil",
 	"description": "Create Brazilizan random data",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"publisher": "nedcloarbr",
 	"repository": {
 		"type": "git",
@@ -36,6 +36,14 @@
 			{
 				"command": "random-brazil.checkcpf",
 				"title": "Random Brazil: Check CPF"
+			},
+      {
+				"command": "random-brazil.randomcnpj",
+				"title": "Random Brazil: Random CNPJ"
+			},
+			{
+				"command": "random-brazil.checkcnpj",
+				"title": "Random Brazil: Check CNPJ"
 			}
 		]
 	},
