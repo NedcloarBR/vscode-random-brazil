@@ -32,7 +32,7 @@ export function checkJudicialProcess() {
   }).then(
     function (input) {
       const isValid = JudicialProcess.validate(input!);
-      Window.showInformationMessage(isValid ? `O CNH: ${input} é valido.` : `O CNH: ${input} é invalido.`)
+      Window.showInformationMessage(isValid ? `O número do Processo Juridico: ${input} é valido.` : `O número do Processo Juridico: ${input} é invalido.`)
     }
   )
 }
