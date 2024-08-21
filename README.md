@@ -2,7 +2,7 @@
 
 ## Descrição
 
-**Random Brazil** é uma extensão do Visual Studio Code que permite gerar e validar dados de documentos brasileiros, como CPF, CNPJ, CNH, entre outros. É uma ferramenta útil para desenvolvedores que precisam de dados fictícios para testes ou validação de dados em suas aplicações.
+**Random Brazil** é uma extensão do Visual Studio Code (e outras IDEs baseadas nele) que permite gerar e validar dados de documentos brasileiros, como CPF, CNPJ, CNH, entre outros. É uma ferramenta útil para desenvolvedores que precisam de dados fictícios para testes ou validação de dados em suas aplicações.
 
 ## Funcionalidades
 
@@ -13,13 +13,13 @@
 ## Instalação
 
 1. **Instalar via VSCode**:
-   - Abra o Visual Studio Code.
-   - Vá para a aba de extensões (Ctrl+Shift+X).
-   - Procure por `"Random Brazil"`.
-   - Clique em "Instalar".
+  - Abra o Visual Studio Code.
+  - Vá para a aba de extensões (Ctrl+Shift+X).
+  - Procure por `"Random Brazil"`.
+  - Clique em "Instalar".
 
 2. **Instalar via linha de comando**:
-   - Execute o comando: `code --install-extension nedcloarbr.random-brazil`.
+  - Execute o comando: `code --install-extension nedcloarbr.random-brazil`.
 
 ## Uso
 
