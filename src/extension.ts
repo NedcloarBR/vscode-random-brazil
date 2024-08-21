@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import { Settings } from './settings';
 import {
-  checkCEP,
+  checkPostalCode,
   checkCNH,
   checkCNPJ,
   checkCPF,
@@ -10,7 +10,7 @@ import {
   checkNUP17,
   checkPISPasep,
   checkRENAVAM,
-  insertRandomCEP,
+  insertRandomPostalCode,
   insertRandomCNH,
   insertRandomCNPJ,
   insertRandomCPF,
@@ -45,8 +45,8 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkpispasep", checkPISPasep));
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomeleitoraltitle", insertRandomEleitoralTitle));
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkeleitoraltitle", checkEleitoralTitle));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomcep", insertRandomCEP));
-  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkcep", checkCEP));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randompostalcode", insertRandomPostalCode));
+  context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkpostalcode", checkPostalCode));
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomrenavam", insertRandomRENAVAM));
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkrenavam", checkRENAVAM));
 }

@@ -1,9 +1,9 @@
 import * as vscode from "vscode";
 import Window = vscode.window;
 import { processSelection } from "./utils";
-import * as CEP from "validation-br/dist/postalCode";
+import * as PostalCode from "validation-br/dist/postalCode";
 
-export function insertRandomCEP() {
+export function insertRandomPostalCode() {
   Window.showInputBox({
     prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
     validateInput: (value: string) => {
@@ -15,24 +15,24 @@ export function insertRandomCEP() {
     }
   }).then(
     function (input) {
-      processSelection(CEP.fake, [input!.toString().toUpperCase() === "S"]);
+      processSelection(PostalCode.fake, [input!.toString().toUpperCase() === "S"]);
     }
   );
 }
 
-export function checkCEP() {
+export function checkPostalCode() {
   Window.showInputBox({
-    prompt: "Digite um CEP (com ou sem pontuação) para validar",
+    prompt: "Digite um Código de Rastreio dos Correios (com ou sem pontuação) para validar",
     validateInput: (value: string) => {
       if (!value) {
-        return "Digite um CEP.";
+        return "Digite um Código de Rastreio dos Correios.";
       }
       return null;
     }
   }).then(
     function (input) {
-      const isValid = CEP.validate(input!);
-      Window.showInformationMessage(isValid ? `O CEP: ${input} é valido.` : `O CEP: ${input} é invalido.`);
+      const isValid = PostalCode.validate(input!);
+      Window.showInformationMessage(isValid ? `O Código de Rastreio dos Correios: ${input} é valido.` : `O Código de Rastreio dos Correios: ${input} é invalido.`);
     }
   );
 }

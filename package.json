@@ -86,12 +86,12 @@
 				"title": "Random Brazil: Check Eleitoral Title"
 			},
 			{
-				"command": "random-brazil.randomcep",
-				"title": "Random Brazil: Random CEP"
+				"command": "random-brazil.randompostalcode",
+				"title": "Random Brazil: Random Postal Code"
 			},
 			{
-				"command": "random-brazil.checkcep",
-				"title": "Random Brazil: Check CEP"
+				"command": "random-brazil.checkpostalcode",
+				"title": "Random Brazil: Check Postal Code"
 			},
 			{
 				"command": "random-brazil.randomrenavam",
