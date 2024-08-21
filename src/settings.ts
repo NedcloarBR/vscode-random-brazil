@@ -3,8 +3,8 @@ import workspace = vscode.workspace;
 
 abstract class BaseSettings {
   protected readSetting<T>(name: string, defaultValue: T): T {
-    let configuration = workspace.getConfiguration();
-    let value = configuration.get<T | undefined>(name, undefined);
+    const configuration = workspace.getConfiguration();
+    const value = configuration.get<T | undefined>(name, undefined);
 
     if (value !== undefined && value !== null) {
       return value;

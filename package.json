@@ -17,17 +17,17 @@
 	"activationEvents": [],
 	"main": "./out/extension.js",
 	"contributes": {
-    "configuration": {
-      "type": "object",
-      "title": "Random Brazil Configuration",
-      "properties": {
-        "random-brazil.enable": {
-          "type": "boolean",
-          "default": "true",
-          "description": "Enable/disable this extension."
-        }
-      }
-    },
+		"configuration": {
+			"type": "object",
+			"title": "Random Brazil Configuration",
+			"properties": {
+				"random-brazil.enable": {
+					"type": "boolean",
+					"default": "true",
+					"description": "Enable/disable this extension."
+				}
+			}
+		},
 		"commands": [
 			{
 				"command": "random-brazil.randomcpf",
@@ -37,7 +37,7 @@
 				"command": "random-brazil.checkcpf",
 				"title": "Random Brazil: Check CPF"
 			},
-      {
+			{
 				"command": "random-brazil.randomcnpj",
 				"title": "Random Brazil: Random CNPJ"
 			},
@@ -45,7 +45,7 @@
 				"command": "random-brazil.checkcnpj",
 				"title": "Random Brazil: Check CNPJ"
 			},
-      {
+			{
 				"command": "random-brazil.randomcnh",
 				"title": "Random Brazil: Random CNH"
 			},
@@ -53,7 +53,7 @@
 				"command": "random-brazil.checkcnh",
 				"title": "Random Brazil: Check CNH"
 			},
-      {
+			{
 				"command": "random-brazil.randomnup17",
 				"title": "Random Brazil: Random NUP17"
 			},
@@ -61,7 +61,7 @@
 				"command": "random-brazil.checknup17",
 				"title": "Random Brazil: Check NUP17"
 			},
-      {
+			{
 				"command": "random-brazil.randomjudicialprocess",
 				"title": "Random Brazil: Random Judicial Process"
 			},
@@ -69,7 +69,7 @@
 				"command": "random-brazil.checkjudicialprocess",
 				"title": "Random Brazil: Check Judicial Process"
 			},
-      {
+			{
 				"command": "random-brazil.randompispasep",
 				"title": "Random Brazil: Random PIS Pasep"
 			},
@@ -77,7 +77,7 @@
 				"command": "random-brazil.checkpispasep",
 				"title": "Random Brazil: Check PIS Pasep"
 			},
-      {
+			{
 				"command": "random-brazil.randomeleitoraltitle",
 				"title": "Random Brazil: Random Eleitoral Title"
 			},
@@ -85,7 +85,7 @@
 				"command": "random-brazil.checkeleitoraltitle",
 				"title": "Random Brazil: Check Eleitoral Title"
 			},
-      {
+			{
 				"command": "random-brazil.randomcep",
 				"title": "Random Brazil: Random CEP"
 			},
@@ -93,7 +93,7 @@
 				"command": "random-brazil.checkcep",
 				"title": "Random Brazil: Check CEP"
 			},
-      {
+			{
 				"command": "random-brazil.randomrenavam",
 				"title": "Random Brazil: Random RENAVAM"
 			},
@@ -118,11 +118,11 @@
 		"@types/mocha": "^10.0.7",
 		"@types/node": "20.x",
 		"@types/vscode": "^1.92.0",
-		"@typescript-eslint/eslint-plugin": "^7.14.1",
-		"@typescript-eslint/parser": "^7.11.0",
+		"@typescript-eslint/eslint-plugin": "^8.2.0",
+		"@typescript-eslint/parser": "^8.2.0",
 		"@vscode/test-cli": "^0.0.9",
 		"@vscode/test-electron": "^2.4.0",
-		"eslint": "8.26.0",
+		"eslint": "^8.26.0",
 		"typescript": "^5.4.5"
 	}
 }

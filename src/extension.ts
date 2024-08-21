@@ -1,16 +1,35 @@
 import * as vscode from 'vscode';
 import { Settings } from './settings';
-import { checkCNH, checkCNPJ, checkCPF, checkNUP17, insertRandomCNH, insertRandomCNPJ, insertRandomCPF, insertRandomNUP17, checkJudicialProcess, insertRandomJudicialProcess, insertRandomPISPasep, checkPISPasep, insertRandomEleitoralTitle, checkEleitoralTitle, insertRandomCEP, checkCEP, insertRandomRENAVAM, checkRENAVAM } from './functions';
+import {
+  checkCEP,
+  checkCNH,
+  checkCNPJ,
+  checkCPF,
+  checkEleitoralTitle,
+  checkJudicialProcess,
+  checkNUP17,
+  checkPISPasep,
+  checkRENAVAM,
+  insertRandomCEP,
+  insertRandomCNH,
+  insertRandomCNPJ,
+  insertRandomCPF,
+  insertRandomEleitoralTitle,
+  insertRandomJudicialProcess,
+  insertRandomNUP17,
+  insertRandomPISPasep,
+  insertRandomRENAVAM
+} from './functions';
 
 export function activate(context: vscode.ExtensionContext) {
   const settings = new Settings();
 
   if (!settings.enabled) {
-    console.log("The extension \"random-brazil\" is disabled");
+    console.log('The extension "random-brazil" is disabled');
     return;
   }
 
-  console.log('The extension \"random-brazil\" is enabled');
+  console.log('The extension "random-brazil" is enabled');
 
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.randomcpf", insertRandomCPF));
   context.subscriptions.push(vscode.commands.registerCommand("random-brazil.checkcpf", checkCPF));
