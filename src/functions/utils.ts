@@ -1,4 +1,5 @@
 import * as vscode from "vscode";
+import { settings, SettingsOptions } from "../settings";
 
 export function processSelection(formatCB: (this: any, ...args: any[]) => string, argsCB: any[]): void {
 

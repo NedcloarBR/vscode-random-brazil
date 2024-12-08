@@ -18,7 +18,7 @@ import {
   insertRandomJudicialProcess,
   insertRandomNUP17,
   insertRandomPISPasep,
-  insertRandomRENAVAM
+  insertRandomRENAVAM,
 } from './functions';
 
 export function activate(context: vscode.ExtensionContext) {

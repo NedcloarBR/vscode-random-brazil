@@ -32,7 +32,11 @@ export function checkCPF() {
   }).then(
     function (input) {
       const isValid = CPF.validate(input!);
-      vscode.window.showInformationMessage(isValid ? `O CPF: ${input} é valido.` : `O CPF: ${input} é invalido.`);
+      if (isValid) {
+        vscode.window.showInformationMessage(`O CPF: ${input} é valido.`);
+      } else {
+        vscode.window.showErrorMessage(`O CPF: ${input} é invalido.`);
+      }
     }
   );
 }

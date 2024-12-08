@@ -31,7 +31,11 @@ export function checkPISPasep() {
   }).then(
     function (input) {
       const isValid = PISPasep.validate(input!);
-      vscode.window.showInformationMessage(isValid ? `O PIS Pasep: ${input} é valido.` : `O PIS Pasep: ${input} é invalido.`);
+      if (isValid) {
+        vscode.window.showInformationMessage(`O PIS Pasep: ${input} é valido.`);
+      } else {
+        vscode.window.showErrorMessage(`O PIS Pasep: ${input} é invalido.`);
+      }
     }
   );
 }

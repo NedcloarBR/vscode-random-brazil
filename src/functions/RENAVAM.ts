@@ -31,7 +31,11 @@ export function checkRENAVAM() {
   }).then(
     function (input) {
       const isValid = RENAVAM.validate(input!);
-      vscode.window.showInformationMessage(isValid ? `O RENAVAM: ${input} é valido.` : `O RENAVAM: ${input} é invalido.`);
+      if (isValid) {
+        vscode.window.showInformationMessage(`O RENAVAM: ${input} é valido.`);
+      } else {
+        vscode.window.showErrorMessage(`O RENAVAM: ${input} é invalido.`);
+      }
     }
   );
 }

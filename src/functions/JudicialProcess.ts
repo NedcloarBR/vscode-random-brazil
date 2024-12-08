@@ -31,7 +31,11 @@ export function checkJudicialProcess() {
   }).then(
     function (input) {
       const isValid = JudicialProcess.validate(input!);
-      vscode.window.showInformationMessage(isValid ? `O número do Processo Juridico: ${input} é valido.` : `O número do Processo Juridico: ${input} é invalido.`);
+      if (isValid) {
+        vscode.window.showInformationMessage(`O número do Processo Jurídico: ${input} é valido.`);
+      } else {
+        vscode.window.showErrorMessage(`O número do Processo Jurídico: ${input} é invalido.`);
+      }
     }
   );
 }

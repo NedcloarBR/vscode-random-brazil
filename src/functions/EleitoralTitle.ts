@@ -31,7 +31,11 @@ export function checkEleitoralTitle() {
   }).then(
     function (input) {
       const isValid = EleitoralTitle.validate(input!);
-      vscode.window.showInformationMessage(isValid ? `O Titulo de Eleitor: ${input} é valido.` : `O Titulo de Eleitor: ${input} é invalido.`);
+      if (isValid) {
+        vscode.window.showInformationMessage(`O Titulo de Eleitor: ${input} é valido.`);
+      } else {
+        vscode.window.showErrorMessage(`O Titulo de Eleitor: ${input} é invalido.`);
+      }
     }
   );
 }

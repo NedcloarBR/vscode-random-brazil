@@ -31,7 +31,11 @@ export function checkPostalCode() {
   }).then(
     function (input) {
       const isValid = PostalCode.validate(input!);
-      vscode.window.showInformationMessage(isValid ? `O Código de Rastreio dos Correios: ${input} é valido.` : `O Código de Rastreio dos Correios: ${input} é invalido.`);
+      if (isValid) {
+        vscode.window.showInformationMessage(`O Código de Rastreio dos Correios: ${input} é valido.`);
+      } else {
+        vscode.window.showErrorMessage(`O Código de Rastreio dos Correios: ${input} é invalido.`);
+      }
     }
   );
 }

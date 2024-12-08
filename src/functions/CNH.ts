@@ -31,7 +31,11 @@ export function checkCNH() {
   }).then(
     function (input) {
       const isValid = CNH.validate(input!);
-      vscode.window.showInformationMessage(isValid ? `O CNH: ${input} é valido.` : `O CNH: ${input} é invalido.`);
+      if (isValid) {
+        vscode.window.showInformationMessage(`O CNH: ${input} é valido.`);
+      } else {
+        vscode.window.showErrorMessage(`O CNH: ${input} é invalido.`);
+      }
     }
   );
 }

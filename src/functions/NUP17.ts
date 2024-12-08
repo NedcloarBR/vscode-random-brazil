@@ -31,7 +31,11 @@ export function checkNUP17() {
   }).then(
     function (input) {
       const isValid = NUP17.validate(input!);
-      vscode.window.showInformationMessage(isValid ? `O NUP17: ${input} é valido.` : `O NUP17: ${input} é invalido.`);
+      if (isValid) {
+        vscode.window.showInformationMessage(`O NUP17: ${input} é valido.`);
+      } else {
+        vscode.window.showErrorMessage(`O NUP17: ${input} é invalido.`);
+      }
     }
   );
 }

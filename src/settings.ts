@@ -20,6 +20,8 @@ export enum SettingsOptions {
 
 class Settings extends BaseSettings {
   private _enabled!: boolean;
+  private _punctuation!: SettingsOptions;
+  private _notification!: boolean;
 
   public constructor() {
     super();

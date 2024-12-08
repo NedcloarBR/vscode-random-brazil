@@ -31,7 +31,11 @@ export function checkCNPJ() {
   }).then(
     function (input) {
       const isValid = CNPJ.validate(input!);
-      vscode.window.showInformationMessage(isValid ? `O CNPJ: ${input} é valido.` : `O CNPJ: ${input} é invalido.`);
+      if (isValid) {
+        vscode.window.showInformationMessage(`O CNPJ: ${input} é valido.`);
+      } else {
+        vscode.window.showErrorMessage(`O CNPJ: ${input} é invalido.`);
+      }
     }
   );
 }
