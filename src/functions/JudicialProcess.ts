@@ -1,10 +1,9 @@
 import * as vscode from "vscode";
-import Window = vscode.window;
 import { processSelection } from "./utils";
 import * as JudicialProcess from "validation-br/dist/judicialProcess";
 
 export function insertRandomJudicialProcess() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
     validateInput: (value: string) => {
       const upperValue = value.toUpperCase();
@@ -21,7 +20,7 @@ export function insertRandomJudicialProcess() {
 }
 
 export function checkJudicialProcess() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Digite o número do Processo Juridico (com ou sem pontuação) para validar",
     validateInput: (value: string) => {
       if (!value) {
@@ -32,7 +31,7 @@ export function checkJudicialProcess() {
   }).then(
     function (input) {
       const isValid = JudicialProcess.validate(input!);
-      Window.showInformationMessage(isValid ? `O número do Processo Juridico: ${input} é valido.` : `O número do Processo Juridico: ${input} é invalido.`);
+      vscode.window.showInformationMessage(isValid ? `O número do Processo Juridico: ${input} é valido.` : `O número do Processo Juridico: ${input} é invalido.`);
     }
   );
 }

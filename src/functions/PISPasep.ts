@@ -1,10 +1,9 @@
 import * as vscode from "vscode";
-import Window = vscode.window;
 import { processSelection } from "./utils";
 import * as PISPasep from "validation-br/dist/pisPasep";
 
 export function insertRandomPISPasep() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
     validateInput: (value: string) => {
       const upperValue = value.toUpperCase();
@@ -21,7 +20,7 @@ export function insertRandomPISPasep() {
 }
 
 export function checkPISPasep() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Digite um PIS Pasep (com ou sem pontuação) para validar",
     validateInput: (value: string) => {
       if (!value) {
@@ -32,7 +31,7 @@ export function checkPISPasep() {
   }).then(
     function (input) {
       const isValid = PISPasep.validate(input!);
-      Window.showInformationMessage(isValid ? `O PIS Pasep: ${input} é valido.` : `O PIS Pasep: ${input} é invalido.`);
+      vscode.window.showInformationMessage(isValid ? `O PIS Pasep: ${input} é valido.` : `O PIS Pasep: ${input} é invalido.`);
     }
   );
 }

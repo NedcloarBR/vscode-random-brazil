@@ -1,10 +1,9 @@
 import * as vscode from "vscode";
-import Window = vscode.window;
 import { processSelection } from "./utils";
 import * as CNH from "validation-br/dist/cnh";
 
 export function insertRandomCNH() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
     validateInput: (value: string) => {
       const upperValue = value.toUpperCase();
@@ -21,7 +20,7 @@ export function insertRandomCNH() {
 }
 
 export function checkCNH() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Digite o CNH (com ou sem pontuação) para validar",
     validateInput: (value: string) => {
       if (!value) {
@@ -32,7 +31,7 @@ export function checkCNH() {
   }).then(
     function (input) {
       const isValid = CNH.validate(input!);
-      Window.showInformationMessage(isValid ? `O CNH: ${input} é valido.` : `O CNH: ${input} é invalido.`);
+      vscode.window.showInformationMessage(isValid ? `O CNH: ${input} é valido.` : `O CNH: ${input} é invalido.`);
     }
   );
 }

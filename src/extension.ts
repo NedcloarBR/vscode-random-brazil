@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import { Settings } from './settings';
+import { settings } from './settings';
 import {
   checkPostalCode,
   checkCNH,
@@ -22,8 +22,6 @@ import {
 } from './functions';
 
 export function activate(context: vscode.ExtensionContext) {
-  const settings = new Settings();
-
   if (!settings.enabled) {
     console.log('The extension "random-brazil" is disabled');
     return;

@@ -1,10 +1,9 @@
 import * as vscode from "vscode";
-import Window = vscode.window;
 import { processSelection } from "./utils";
 import * as PostalCode from "validation-br/dist/postalCode";
 
 export function insertRandomPostalCode() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
     validateInput: (value: string) => {
       const upperValue = value.toUpperCase();
@@ -21,7 +20,7 @@ export function insertRandomPostalCode() {
 }
 
 export function checkPostalCode() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Digite um Código de Rastreio dos Correios (com ou sem pontuação) para validar",
     validateInput: (value: string) => {
       if (!value) {
@@ -32,7 +31,7 @@ export function checkPostalCode() {
   }).then(
     function (input) {
       const isValid = PostalCode.validate(input!);
-      Window.showInformationMessage(isValid ? `O Código de Rastreio dos Correios: ${input} é valido.` : `O Código de Rastreio dos Correios: ${input} é invalido.`);
+      vscode.window.showInformationMessage(isValid ? `O Código de Rastreio dos Correios: ${input} é valido.` : `O Código de Rastreio dos Correios: ${input} é invalido.`);
     }
   );
 }

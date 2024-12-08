@@ -1,9 +1,8 @@
 import * as vscode from 'vscode';
-import workspace = vscode.workspace;
 
 abstract class BaseSettings {
   protected readSetting<T>(name: string, defaultValue: T): T {
-    const configuration = workspace.getConfiguration();
+    const configuration = vscode.workspace.getConfiguration();
     const value = configuration.get<T | undefined>(name, undefined);
 
     if (value !== undefined && value !== null) {
@@ -13,12 +12,25 @@ abstract class BaseSettings {
   }
 }
 
-export class Settings extends BaseSettings {
-  private _enabled: boolean;
+export enum SettingsOptions {
+  enabled = "enabled",
+  disabled = "disabled",
+  ask = "ask"
+}
 
-  constructor() {
+class Settings extends BaseSettings {
+  private _enabled!: boolean;
+
+  public constructor() {
     super();
+    this.updateSettings();
 
+    vscode.workspace.onDidChangeConfiguration(() => {
+      this.updateSettings();
+    });
+  }
+
+  private updateSettings(): void {
     this._enabled = this.readSetting<boolean>("random-brazil.enabled", true);
   }
 
@@ -26,3 +38,5 @@ export class Settings extends BaseSettings {
     return this._enabled;
   }
 }
+
+export const settings = new Settings();

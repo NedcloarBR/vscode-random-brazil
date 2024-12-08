@@ -1,10 +1,9 @@
 import * as vscode from "vscode";
-import Window = vscode.window;
 import { processSelection } from "./utils";
 import * as RENAVAM from "validation-br/dist/renavam";
 
 export function insertRandomRENAVAM() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
     validateInput: (value: string) => {
       const upperValue = value.toUpperCase();
@@ -21,7 +20,7 @@ export function insertRandomRENAVAM() {
 }
 
 export function checkRENAVAM() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Digite um RENAVAM (com ou sem pontuação) para validar",
     validateInput: (value: string) => {
       if (!value) {
@@ -32,7 +31,7 @@ export function checkRENAVAM() {
   }).then(
     function (input) {
       const isValid = RENAVAM.validate(input!);
-      Window.showInformationMessage(isValid ? `O RENAVAM: ${input} é valido.` : `O RENAVAM: ${input} é invalido.`);
+      vscode.window.showInformationMessage(isValid ? `O RENAVAM: ${input} é valido.` : `O RENAVAM: ${input} é invalido.`);
     }
   );
 }

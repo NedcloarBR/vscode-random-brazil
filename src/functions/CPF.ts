@@ -4,7 +4,7 @@ import { processSelection } from "./utils";
 import * as CPF from "validation-br/dist/cpf";
 
 export function insertRandomCPF() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
     validateInput: (value: string) => {
       const upperValue = value.toUpperCase();
@@ -21,7 +21,7 @@ export function insertRandomCPF() {
 }
 
 export function checkCPF() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Digite o CPF (com ou sem pontuação) para validar",
     validateInput: (value: string) => {
       if (!value) {
@@ -32,7 +32,7 @@ export function checkCPF() {
   }).then(
     function (input) {
       const isValid = CPF.validate(input!);
-      Window.showInformationMessage(isValid ? `O CPF: ${input} é valido.` : `O CPF: ${input} é invalido.`);
+      vscode.window.showInformationMessage(isValid ? `O CPF: ${input} é valido.` : `O CPF: ${input} é invalido.`);
     }
   );
 }

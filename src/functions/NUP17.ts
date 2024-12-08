@@ -1,10 +1,9 @@
 import * as vscode from "vscode";
-import Window = vscode.window;
 import { processSelection } from "./utils";
 import * as NUP17 from "validation-br/dist/nup17";
 
 export function insertRandomNUP17() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
     validateInput: (value: string) => {
       const upperValue = value.toUpperCase();
@@ -21,7 +20,7 @@ export function insertRandomNUP17() {
 }
 
 export function checkNUP17() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Digite o NUP17 (com ou sem pontuação) para validar",
     validateInput: (value: string) => {
       if (!value) {
@@ -32,7 +31,7 @@ export function checkNUP17() {
   }).then(
     function (input) {
       const isValid = NUP17.validate(input!);
-      Window.showInformationMessage(isValid ? `O NUP17: ${input} é valido.` : `O NUP17: ${input} é invalido.`);
+      vscode.window.showInformationMessage(isValid ? `O NUP17: ${input} é valido.` : `O NUP17: ${input} é invalido.`);
     }
   );
 }

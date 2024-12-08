@@ -1,10 +1,9 @@
 import * as vscode from "vscode";
-import Window = vscode.window;
 import { processSelection } from "./utils";
 import * as CNPJ from "validation-br/dist/cnpj";
 
 export function insertRandomCNPJ() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
     validateInput: (value: string) => {
       const upperValue = value.toUpperCase();
@@ -21,7 +20,7 @@ export function insertRandomCNPJ() {
 }
 
 export function checkCNPJ() {
-  Window.showInputBox({
+  vscode.window.showInputBox({
     prompt: "Digite o CNPJ (com ou sem pontuação) para validar",
     validateInput: (value: string) => {
       if (!value) {
@@ -32,7 +31,7 @@ export function checkCNPJ() {
   }).then(
     function (input) {
       const isValid = CNPJ.validate(input!);
-      Window.showInformationMessage(isValid ? `O CNPJ: ${input} é valido.` : `O CNPJ: ${input} é invalido.`);
+      vscode.window.showInformationMessage(isValid ? `O CNPJ: ${input} é valido.` : `O CNPJ: ${input} é invalido.`);
     }
   );
 }
