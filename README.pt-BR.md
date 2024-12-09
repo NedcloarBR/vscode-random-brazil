@@ -22,7 +22,7 @@
   Crie dados brasileiros válidos, como CPF, CNPJ e CNH, de forma rápida e prática.
 
 - **🔍 Validação de Dados**  
-  Verifique a autenticidade de CPFs, CNPJs e outros documentos diretamente no editor.
+  Verifique se CPFs, CNPJs e outros documentos diretamente no editor são validos.
 
 - **🖥️ Interface Intuitiva**  
   A extensão se integra ao VSCode, oferecendo uma experiência fluida e eficiente no seu fluxo de trabalho.
@@ -33,7 +33,7 @@
 
 ### 1️⃣ Instalar via VSCode
 1. Abra o **Visual Studio Code**.
-2. Acesse a aba de extensões (`Ctrl+Shift+X`).
+2. Acesse a aba de extensões (`Ctrl/Cmd+Shift+X`).
 3. Procure por **`Random Brazil`**.
 4. Clique em **Instalar**.
 
@@ -47,18 +47,18 @@ code --install-extension nedcloarbr.random-brazil
 
 ## 💡 Como Usar
 
-Após instalar, utilize a extensão diretamente pela barra lateral ou por comandos disponíveis na **paleta de comandos** (`Ctrl+Shift+P`).
+Após instalar, utilize a extensão diretamente pela barra lateral ou por comandos disponíveis na **paleta de comandos** (`Ctrl/Cmd+Shift+P`).
 
 ### 📌 Exemplos de Uso
 
 - **Gerar um CPF válido**  
   Execute o comando:  
-  `> Random Brazil: Random CPF`  
+  `> Random Brazil: Gerar CPF`  
   O CPF será inserido automaticamente na posição do cursor no código.
 
 - **Validar um CPF**  
   Execute o comando:  
-  `Random Brazil: Check CPF`  
+  `Random Brazil: Validar CPF`  
   Digite o CPF. Uma notificação será exibida indicando se o CPF é válido ou não.
 
 ---

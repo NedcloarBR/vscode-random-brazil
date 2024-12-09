@@ -16,104 +16,109 @@
 	],
 	"activationEvents": [],
 	"main": "./out/extension.js",
-  "icon": "assets/icon.png",
+	"icon": "assets/icon.png",
+  "l10n": "./l10n",
 	"contributes": {
 		"configuration": {
 			"type": "object",
-			"title": "Random Brazil Configuration",
+			"title": "%settings.random-brazil.title%",
 			"properties": {
 				"random-brazil.enable": {
 					"type": "boolean",
 					"default": "true",
-					"description": "Enable/disable this extension."
+					"description": "%settings.random-brazil.enable%"
 				},
-        "random-brazil.punctuation": {
-          "type": "string",
-          "enum": ["enabled", "disabled", "ask"],
-          "default": "ask",
-          "description": "Enable/disable/ask punctuation in generated documents."
-        },
-        "random-brazil.notification": {
-          "type": "boolean",
-          "default": "true",
-          "description": "Enable/disable notifications. if disabled validation will be silent."
-        }
+				"random-brazil.punctuation": {
+					"type": "string",
+					"enum": [
+						"enabled",
+						"disabled",
+						"ask"
+					],
+					"default": "ask",
+					"description": "%settings.random-brazil.punctuation%"
+				},
+				"random-brazil.notification": {
+					"type": "boolean",
+					"default": "true",
+					"description": "%settings.random-brazil.notification%"
+				}
 			}
 		},
-		"commands": [
-			{
-				"command": "random-brazil.randomcpf",
-				"title": "Random Brazil: Random CPF"
-			},
-			{
-				"command": "random-brazil.checkcpf",
-				"title": "Random Brazil: Check CPF"
-			},
-			{
-				"command": "random-brazil.randomcnpj",
-				"title": "Random Brazil: Random CNPJ"
-			},
-			{
-				"command": "random-brazil.checkcnpj",
-				"title": "Random Brazil: Check CNPJ"
-			},
-			{
-				"command": "random-brazil.randomcnh",
-				"title": "Random Brazil: Random CNH"
-			},
-			{
-				"command": "random-brazil.checkcnh",
-				"title": "Random Brazil: Check CNH"
-			},
-			{
-				"command": "random-brazil.randomnup17",
-				"title": "Random Brazil: Random NUP17"
-			},
-			{
-				"command": "random-brazil.checknup17",
-				"title": "Random Brazil: Check NUP17"
-			},
-			{
-				"command": "random-brazil.randomjudicialprocess",
-				"title": "Random Brazil: Random Judicial Process"
-			},
-			{
-				"command": "random-brazil.checkjudicialprocess",
-				"title": "Random Brazil: Check Judicial Process"
-			},
-			{
-				"command": "random-brazil.randompispasep",
-				"title": "Random Brazil: Random PIS Pasep"
-			},
-			{
-				"command": "random-brazil.checkpispasep",
-				"title": "Random Brazil: Check PIS Pasep"
-			},
-			{
-				"command": "random-brazil.randomeleitoraltitle",
-				"title": "Random Brazil: Random Eleitoral Title"
-			},
-			{
-				"command": "random-brazil.checkeleitoraltitle",
-				"title": "Random Brazil: Check Eleitoral Title"
-			},
-			{
-				"command": "random-brazil.randompostalcode",
-				"title": "Random Brazil: Random Postal Code"
-			},
-			{
-				"command": "random-brazil.checkpostalcode",
-				"title": "Random Brazil: Check Postal Code"
-			},
-			{
-				"command": "random-brazil.randomrenavam",
-				"title": "Random Brazil: Random RENAVAM"
-			},
-			{
-				"command": "random-brazil.checkrenavam",
-				"title": "Random Brazil: Check RENAVAM"
-			}
-		]
+    "commands": [
+      {
+        "command": "random-brazil.generate.cpf",
+        "title": "%commands.random-brazil.generate.cpf%"
+      },
+      {
+        "command": "random-brazil.validate.cpf",
+        "title": "%commands.random-brazil.validate.cpf%"
+      },
+      {
+        "command": "random-brazil.generate.cnpj",
+        "title": "%commands.random-brazil.generate.cnpj%"
+      },
+      {
+        "command": "random-brazil.validate.cnpj",
+        "title": "%commands.random-brazil.validate.cnpj%"
+      },
+      {
+        "command": "random-brazil.generate.cnh",
+        "title": "%commands.random-brazil.generate.cnh%"
+      },
+      {
+        "command": "random-brazil.validate.cnh",
+        "title": "%commands.random-brazil.validate.cnh%"
+      },
+      {
+        "command": "random-brazil.generate.nup17",
+        "title": "%commands.random-brazil.generate.nup17%"
+      },
+      {
+        "command": "random-brazil.validate.nup17",
+        "title": "%commands.random-brazil.validate.nup17%"
+      },
+      {
+        "command": "random-brazil.generate.judicial-process",
+        "title": "%commands.random-brazil.generate.judicial-process%"
+      },
+      {
+        "command": "random-brazil.validate.judicial-process",
+        "title": "%commands.random-brazil.validate.judicial-process%"
+      },
+      {
+        "command": "random-brazil.generate.pis-pasep",
+        "title": "%commands.random-brazil.generate.pis-pasep%"
+      },
+      {
+        "command": "random-brazil.validate.pis-pasep",
+        "title": "%commands.random-brazil.validate.pis-pasep%"
+      },
+      {
+        "command": "random-brazil.generate.eleitoral-title",
+        "title": "%commands.random-brazil.generate.eleitoral-title%"
+      },
+      {
+        "command": "random-brazil.validate.eleitoral-title",
+        "title": "%commands.random-brazil.validate.eleitoral-title%"
+      },
+      {
+        "command": "random-brazil.generate.postal-code",
+        "title": "%commands.random-brazil.generate.postal-code%"
+      },
+      {
+        "command": "random-brazil.validate.postal-code",
+        "title": "%commands.random-brazil.validate.postal-code%"
+      },
+      {
+        "command": "random-brazil.generate.renavam",
+        "title": "%commands.random-brazil.generate.renavam%"
+      },
+      {
+        "command": "random-brazil.validate.renavam",
+        "title": "%commands.random-brazil.validate.renavam%"
+      }
+    ]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
@@ -123,6 +128,7 @@
 		"test": "vscode-test"
 	},
 	"dependencies": {
+		"@vscode/l10n": "^0.0.18",
 		"validation-br": "^1.4.5"
 	},
 	"devDependencies": {
@@ -132,6 +138,7 @@
 		"@types/vscode": "^1.92.0",
 		"@typescript-eslint/eslint-plugin": "^8.2.0",
 		"@typescript-eslint/parser": "^8.2.0",
+		"@vscode/l10n-dev": "^0.0.35",
 		"@vscode/test-cli": "^0.0.9",
 		"@vscode/test-electron": "^2.4.0",
 		"eslint": "^8.26.0",

@@ -1,9 +1,10 @@
-import * as vscode from "vscode";
+import { window, l10n } from "vscode";
 import { settings, SettingsOptions } from "./settings";
+import { Localization } from "./localization";
 
 export function processSelection(formatCB: (this: any, ...args: any[]) => string, argsCB: any[]): void {
 
-  const editor = vscode.window.activeTextEditor!;
+  const editor = window.activeTextEditor!;
   const selections = editor.selections;
 
   function edit(edit: any) {
@@ -25,20 +26,19 @@ export function processSelection(formatCB: (this: any, ...args: any[]) => string
 export function generate(generator: any): void {
   switch (settings.punctuation) {
     case SettingsOptions.ask:
-      vscode.window.showInputBox({
-        prompt: "Gerar com pontuação? Digite S para Sim ou N para Não",
+      window.showInputBox({
+        prompt: l10n.t(Localization.punctuationPrompt),
         validateInput: (value: string) => {
           const upperValue = value.toUpperCase();
-          if (upperValue !== "S" && upperValue !== "N") {
-            return "Por favor, digite apenas S ou N.";
+          if (!["S", "N", "Y"].includes(upperValue)) {
+            return l10n.t(Localization.confirmWrong);
           }
           return null;
         }
-      }).then(
-        function (input) {
-          return processSelection(generator, [input!.toString().toUpperCase() === "S"]);
-        }
-      );
+      }).then((input) => {
+        if(!input) return;
+        return processSelection(generator, [input?.toString().toUpperCase() === "S"]);
+      });
       break;
     case SettingsOptions.enabled:
       return processSelection(generator, [true]);
@@ -49,24 +49,23 @@ export function generate(generator: any): void {
 }
 
 export function validate(validator: any, document: string): void {
-  vscode.window.showInputBox({
-    prompt: `Digite o ${document} (com ou sem pontuação) para validar`,
+  window.showInputBox({
+    prompt: l10n.t(Localization.documentPrompt, { document }),
     validateInput: (value: string) => {
       if (!value) {
-        return `Digite um ${document}.`;
+        return l10n.t(Localization.enterDocument);
       }
       return null;
     }
-  }).then(
-    function (input) {
-      const isValid = validator(input!);
-      if(settings.notification) {
-        if(isValid) {
-          return vscode.window.showInformationMessage(`O ${document}: ${input} é valido.`);
-        } else {
-          return vscode.window.showErrorMessage(`O ${document}: ${input} é invalido.`);
-        }
+  }).then((input) => {
+    if(!input) return;
+    const isValid = validator(input);
+    if(settings.notification) {
+      if(isValid) {
+        return window.showInformationMessage(l10n.t(Localization.documentValid, { document, input }));
+      } else {
+        return window.showErrorMessage(l10n.t(Localization.documentInvalid, { document, input }));
       }
     }
-  );
+  });
 }

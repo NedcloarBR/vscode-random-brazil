@@ -22,7 +22,7 @@
   Quickly and easily generate valid Brazilian data, such as CPF, CNPJ, and CNH.
 
 - **🔍 Data Validation**  
-  Check the authenticity of CPFs, CNPJs, and other documents directly in the editor.
+  Check if CPFs, CNPJs and other documents directly in the editor are valid.
 
 - **🖥️ Intuitive Interface**  
   The extension integrates with VSCode, providing a smooth and efficient experience in your workflow.
@@ -33,7 +33,7 @@
 
 ### 1️⃣ Install via VSCode
 1. Open **Visual Studio Code**.
-2. Go to the extensions tab (`Ctrl+Shift+X`).
+2. Go to the extensions tab (`Ctrl/Cmd+Shift+X`).
 3. Search for **`Random Brazil`**.
 4. Click on **Install**.
 
@@ -47,18 +47,18 @@ code --install-extension nedcloarbr.random-brazil
 
 ## 💡 How to Use
 
-After installation, use the extension directly from the sidebar or via commands available in the **command palette** (`Ctrl+Shift+P`).
+After installation, use the extension directly from the sidebar or via commands available in the **command palette** (`Ctrl/Cmd+Shift+P`).
 
 ### 📌 Examples of Use
 
 - **Generate a valid CPF**  
   Run the command:  
-  `Random Brazil: Random CPF`  
+  `Random Brazil: Generate CPF`  
   The CPF will be automatically inserted at the cursor's position in the code.
 
 - **Validate a CPF**  
   Run the command:  
-  `Random Brazil: Check CPF`  
+  `Random Brazil: Validate CPF`  
   Enter the CPF. A notification will appear indicating whether the CPF is valid or not.
 
 ---

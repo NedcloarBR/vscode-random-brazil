@@ -1,0 +1,8 @@
+{
+  "Generate with punctuation? Enter Y for Yes or N for Not": "Gerar com pontuação? Digite S para Sim ou N para Não",
+  "Please enter only Y or N.": "Por favor, digite apenas S ou N.",
+  "Type the {document} (with or without punctuation) to validate": "Digite o {document} (com ou sem pontuação) para validar",
+  "Enter a {document}.": "Digite um {document}.",
+  "The {document}: {input} is valid.": "O {document}: {input} é valido.",
+  "The {document}: {input} is invalid.": "O {document}: {input} é invalido."
+}

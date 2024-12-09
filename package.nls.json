@@ -1,0 +1,25 @@
+{
+  "commands.random-brazil.generate.cpf": "Random Brazil: Generate CPF",
+  "commands.random-brazil.validate.cpf": "Random Brazil: Validate CPF",
+  "commands.random-brazil.generate.cnpj": "Random Brazil: Generate CNPJ",
+  "commands.random-brazil.validate.cnpj": "Random Brazil: Validate CNPJ",
+  "commands.random-brazil.generate.cnh": "Random Brazil: Generate CNH",
+  "commands.random-brazil.validate.cnh": "Random Brazil: Validate CNH",
+  "commands.random-brazil.generate.nup17": "Random Brazil: Generate NUP17",
+  "commands.random-brazil.validate.nup17": "Random Brazil: Validate NUP17",
+  "commands.random-brazil.generate.judicial-process": "Random Brazil: Generate Judicial Process",
+  "commands.random-brazil.validate.judicial-process": "Random Brazil: Validate Judicial Process",
+  "commands.random-brazil.generate.pis-pasep": "Random Brazil: Generate PIS/Pasep",
+  "commands.random-brazil.validate.pis-pasep": "Random Brazil: Validate PIS/Pasep",
+  "commands.random-brazil.generate.eleitoral-title": "Random Brazil: Generate Eleitoral Title",
+  "commands.random-brazil.validate.eleitoral-title": "Random Brazil: Validate Eleitoral Title",
+  "commands.random-brazil.generate.postal-code": "Random Brazil: Generate Postal Code",
+  "commands.random-brazil.validate.postal-code": "Random Brazil: Validate Postal Code",
+  "commands.random-brazil.generate.renavam": "Random Brazil: Generate RENAVAM",
+  "commands.random-brazil.validate.renavam": "Random Brazil: Validate RENAVAM",
+
+  "settings.random-brazil.title": "Random Brazil Configuration",
+  "settings.random-brazil.enable": "Enable/disable this extension.",
+  "settings.random-brazil.punctuation": "Enable/disable/ask if documents will be generated with punctuation",
+  "settings.random-brazil.notification": "Enable/disable notifications. If disabled the validation commands will not show the result."
+}

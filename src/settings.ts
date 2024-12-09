@@ -1,8 +1,8 @@
-import * as vscode from 'vscode';
+import { workspace} from 'vscode';
 
 abstract class BaseSettings {
   protected readSetting<T>(name: string, defaultValue: T): T {
-    const configuration = vscode.workspace.getConfiguration();
+    const configuration = workspace.getConfiguration();
     const value = configuration.get<T | undefined>(name, undefined);
 
     if (value !== undefined && value !== null) {
@@ -27,7 +27,7 @@ class Settings extends BaseSettings {
     super();
     this.updateSettings();
 
-    vscode.workspace.onDidChangeConfiguration(() => {
+    workspace.onDidChangeConfiguration(() => {
       this.updateSettings();
     });
   }
