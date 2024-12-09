@@ -4,7 +4,11 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
-## [v2.0.0] - Refactoring Project
+## [v2.1.0] - Localization Update
+
+- Localize Project to `en` and `pt-BR`
+
+## [v2.0.0] - Refactoring Project Update
 
 - Refactor insert functions -> generate
 - Refactor check functions -> validate
