@@ -4,6 +4,22 @@ All notable changes to the "random-brazil" extension will be documented in this 
 
 <!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
+## [v2.0.0] - Refactoring Project
+
+- Refactor insert functions -> generate
+- Refactor check functions -> validate
+- New Settings
+
+| Setting        | Description                                                                                    | Possible values          |
+|----------------|------------------------------------------------------------------------------------------------|--------------------------|
+| `punctuation`  | Enable, Disable or Ask whether the document will be generated with punctuation                 | `enable`/`disable`/`ask` |
+| `notification` | Enable or Disable the notifications. If Disabled the checking commands will not work correctly | `true`/`false`           |
+
+## [v1.8.5] - Another Update
+
+- Add pt-BR and en-US README
+- Add Extension Icon
+
 ## [v1.8.4] - Cleanup Project Update
 
 Remove unnecessary files
