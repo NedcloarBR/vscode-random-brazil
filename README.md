@@ -6,11 +6,11 @@
 
   <p><strong>Random Brazil</strong> is an extension for Visual Studio Code (and other compatible IDEs) that allows you to <strong>generate</strong> and <strong>validate</strong> Brazilian document data such as CPF, CNPJ, CNH, among others. It is ideal for developers who need fictional data for testing or validating information in their applications.</p>
 
-  ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/nedcloarbr.random-brazil?include_prereleases&style=for-the-badge&label=VSCode&link=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dnedcloarbr.random-brazil)
-  ![Open VSX Version](https://img.shields.io/open-vsx/v/nedcloarbr/random-brazil?style=for-the-badge&color=purple&link=https%3A%2F%2Fopen-vsx.org%2Fextension%2Fnedcloarbr%2Frandom-brazil)
+  [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/nedcloarbr.random-brazil?include_prereleases&style=for-the-badge&label=VSCode)](https://marketplace.visualstudio.com/items?itemName=nedcloarbr.random-brazil)
+  [![Open VSX Version](https://img.shields.io/open-vsx/v/nedcloarbr/random-brazil?style=for-the-badge&color=purple)](https://open-vsx.org/extension/nedcloarbr/random-brazil)
   
   en-US
-  [pt-BR](https://github.com/NedcloarBR/vscode-random-brazil/blob/master/README.md)
+  [pt-BR](https://github.com/NedcloarBR/vscode-random-brazil/blob/master/README.pt-BR.md)
 
 </div>
 

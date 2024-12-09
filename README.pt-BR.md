@@ -6,8 +6,8 @@
 
   <p><strong>Random Brazil</strong> é uma extensão para o Visual Studio Code (e outras IDEs compatíveis) que permite <strong>gerar</strong> e <strong>validar</strong> dados de documentos brasileiros, como CPF, CNPJ, CNH, entre outros. Ideal para desenvolvedores que necessitam de dados fictícios para testes ou validação de informações em suas aplicações.</p>
 
-  ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/nedcloarbr.random-brazil?include_prereleases&style=for-the-badge&label=VSCode&link=https%3A%2F%2Fmarketplace.visualstudio.com%2Fitems%3FitemName%3Dnedcloarbr.random-brazil)
-  ![Open VSX Version](https://img.shields.io/open-vsx/v/nedcloarbr/random-brazil?style=for-the-badge&color=purple&link=https%3A%2F%2Fopen-vsx.org%2Fextension%2Fnedcloarbr%2Frandom-brazil)
+  [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/nedcloarbr.random-brazil?include_prereleases&style=for-the-badge&label=VSCode)](https://marketplace.visualstudio.com/items?itemName=nedcloarbr.random-brazil)
+  [![Open VSX Version](https://img.shields.io/open-vsx/v/nedcloarbr/random-brazil?style=for-the-badge&color=purple)](https://open-vsx.org/extension/nedcloarbr/random-brazil)
 
   [en-US](https://github.com/NedcloarBR/vscode-random-brazil/blob/master/README.md)
   pt-BR
