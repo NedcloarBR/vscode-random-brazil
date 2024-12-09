@@ -26,7 +26,18 @@
 					"type": "boolean",
 					"default": "true",
 					"description": "Enable/disable this extension."
-				}
+				},
+        "random-brazil.punctuation": {
+          "type": "string",
+          "enum": ["enabled", "disabled", "ask"],
+          "default": "ask",
+          "description": "Enable/disable/ask punctuation in generated documents."
+        },
+        "random-brazil.notification": {
+          "type": "boolean",
+          "default": "true",
+          "description": "Enable/disable notifications. if disabled validation will be silent."
+        }
 			}
 		},
 		"commands": [

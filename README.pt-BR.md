@@ -63,6 +63,16 @@ Após instalar, utilize a extensão diretamente pela barra lateral ou por comand
 
 ---
 
+## ⚙️ Configuração
+
+| Configuração   | Descrição                                                                                           | Valores Possíveis        |
+|----------------|-----------------------------------------------------------------------------------------------------|--------------------------|
+| `enable`       | Ativa ou Desativa a extensão                                                                        | `true`/`false`           |
+| `punctuation`  | Ativa, Desativa ou Pergunta se o documento vai ser gerado com pontuação                             | `enable`/`disable`/`ask` |
+| `notification` | Ativa ou Desativa as notificações. Se desativado os comandos de checar não funcionarão corretamente | `true`/`false`           |
+
+---
+
 ## 🤝 Contribuição
 
 Contribuições são bem-vindas! Para ajudar a melhorar o projeto, siga os passos:

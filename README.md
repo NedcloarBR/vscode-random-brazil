@@ -63,6 +63,16 @@ After installation, use the extension directly from the sidebar or via commands 
 
 ---
 
+## ⚙️ Settings
+
+| Setting        | Description                                                                                    | Possible values          |
+|----------------|------------------------------------------------------------------------------------------------|--------------------------|
+| `enable`       | Enable or Disable the extension                                                                | `true`/`false`           |
+| `punctuation`  | Enable, Disable or Ask whether the document will be generated with punctuation                 | `enable`/`disable`/`ask` |
+| `notification` | Enable or Disable the notifications. If Disabled the checking commands will not work correctly | `true`/`false`           |
+
+---
+
 ## 🤝 Contribution
 
 Contributions are welcome! To help improve the project, follow these steps:

@@ -34,10 +34,20 @@ class Settings extends BaseSettings {
 
   private updateSettings(): void {
     this._enabled = this.readSetting<boolean>("random-brazil.enabled", true);
+    this._punctuation = this.readSetting<SettingsOptions>("random-brazil.punctuation", SettingsOptions.ask);
+    this._notification = this.readSetting<boolean>("random-brazil.notification", true);
   }
 
   public get enabled(): boolean {
     return this._enabled;
+  }
+
+  public get punctuation(): SettingsOptions {
+    return this._punctuation;
+  }
+
+  public get notification(): boolean {
+    return this._notification;
   }
 }
 
